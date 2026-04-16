@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts",
+    "dev": "nodemon --watch src --ext ts --exec \"tsx src/server.ts\"",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node ./dist/server.js"
   },
   "keywords": [],
   "author": "Andres Santiago Jimenez Guzman",
